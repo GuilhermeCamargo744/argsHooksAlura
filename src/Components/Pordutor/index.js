@@ -3,7 +3,6 @@ import {Text, View, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import Estrelas from '../Estrelas';
 
 const distanciaEmMetros = distancia => {
-  console.log('distancia em metros');
   return `${distancia}m`;
 };
 
@@ -20,7 +19,6 @@ export default function Produtor({nome, imagem, distancia, estrelas}) {
     [distancia],
   );
 
-  console.log('distanciaTexto', distancia);
 
   return (
     <TouchableOpacity style={styles.cartao} onPress={inverterSelecionado}>
